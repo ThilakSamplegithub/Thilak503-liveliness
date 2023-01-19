@@ -1,10 +1,15 @@
 body{
-    margin:0px;
-    padding: 0px;
-    box-sizing: 0px;
+    /* *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    } */
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
 }
-#navBar>div{
-
+#navBar{
+width: 100%;
     /* border:1px solid red; */
 }
 #navBar>div:nth-child(1){
@@ -86,6 +91,7 @@ body{
     width: 14%;
     z-index: 1;
     text-align: center;
+    background-color: white;
     /* border:1px solid black; */
     /* margin-right: 100px; */
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
@@ -102,7 +108,6 @@ color:blue;
     width:100px;
     margin-top:50px;
    }
-
     #navBar>div:nth-child(3){
         height: 100px;
         display:flex;
@@ -110,6 +115,7 @@ color:blue;
         align-items: center;
         /* border:1px solid red; */
         width:100%;
+        /* overflow: auto; */
         background-color: rgb(241,241,241);
         /* padding:-1005px 0px */
     }
@@ -153,6 +159,9 @@ color:blue;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 18px;
     }
+    /* .rightprofilesection>div{
+        border: 1px solid red;
+    } */
     .rightprofilesection>div:nth-child(1)>svg{
         width: 50px;
         height: 50px;
@@ -161,13 +170,104 @@ color:blue;
         /* border:1px solid red; */
         display: flex;
     }
-    .products{
+
+     .productsmenu>ul{
+        display:none;
+     }
+     .productsmenu>ul>li{
+        line-height:30px;
+        /* cursor: pointer; */
+     }
+     .productsmenu>ul>li>span:hover{
+        color:white;
+        background-color: rgb(20,33,61);
         cursor: pointer;
-    }
- .products>div{
-        display: none;
      }
-     .products>div:hover{
-        display: block;
+     .productsmenu:hover>ul{
+        display:block;
         position:absolute;
+        margin-top: 320px;
+        margin-left:130px;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+        text-decoration: none;
+        list-style: none
      }
+     .submenu2>div>ul{
+        display:none;
+     }
+     .submenu2>div>ul>li{
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: -40px;
+     }
+    
+     .submenu2:hover>div>ul{
+        display: block;
+        position: absolute;
+        margin-top:-30px;
+        margin-left:190px;
+        list-style: none;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        /* padding:20px; */
+        width:70%;
+     }
+     .submenu2>div>ul>li>span{
+        color:rgb(20,33,61);
+        font-weight: bold;
+        cursor:pointer;
+     }
+     #midsection{
+        border:1px solid red;
+     }
+     #midsection>div{
+        display: flex;
+        /* border:1px solid red; */
+        padding:5px;
+        margin-left:30px;
+        /* justify-content: center; */
+        align-items: center;
+     }
+     #midsection>div>div:nth-child(1)>span:nth-child(1):hover{
+        cursor: pointer;
+     }
+     #midsection>div>div:nth-child(2)>span:nth-child(1){
+        /* color:rgb(20,33,61); */
+        color:blue;
+        font-size:15px;
+        /* border:1px solid blue; */
+     }
+     #midsection>div>div:nth-child(2)>span:nth-child(1):hover{
+        cursor: pointer;
+     }
+     #midsection>div>div:nth-child(3){
+        color:#5A6169;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+     }
+     #midsection>h1{
+        margin-left:30px;
+        font-size: 28px;
+        font-family:Arial, Helvetica, sans-serif;
+        color:#222222;
+     }
+     #midsection>h1+p{
+        margin-left:30px;
+     }
+     #midsection>h1+p>span:nth-child(1){
+        color:#5A6169;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+     }
+     #midsection>h1+p>span:nth-child(2){
+        color:#0066CC;
+        font-size:14px;
+        font-family: Arial, Helvetica, sans-serif;
+     }
+     #midsection>h1+p>span:nth-child(2):hover{
+        cursor:pointer;
+     }
+
+     /* #midsection> */
+     
