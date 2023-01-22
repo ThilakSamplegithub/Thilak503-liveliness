@@ -283,7 +283,7 @@ color:blue;
 #functionalitySection>div:nth-child(1){
     width:20%;
     height: 500px;
-    border:1px solid blue
+    /* border:1px solid blue */
 }
 #functionalitySection>div:nth-child(2){
     width:70%;
@@ -388,4 +388,66 @@ color:blue;
     font-size:12px;
     font-family: Arial, Helvetica, sans-serif;
 }
-     
+   /* filter css */
+#functionalitySection>div:nth-child(1){
+    /* border:1px solid red; */
+    margin-top: 100px;
+    text-align: center;   
+}
+#functionalitySection>div:nth-child(1)>div>p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#222222;
+}    
+/* footer section starts here  */
+#footerSection{
+    display: flex;
+    /* border:1px solid red; */
+    background-color:rgb(4,16,42) ;
+    justify-content: space-around;
+    padding:30px;
+    margin-top:35px;
+}
+#footerSection>div>h4{
+    color:white;
+    cursor:pointer;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+#footerSection>div>ul>ol{
+    color:white;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footerSection>div>p{
+    color:#FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footerSection>div:nth-child(4)>h4+div {
+display:flex;
+/* border:1px solid red; */
+justify-content: space-evenly;
+width:40%;
+}
+#footerSection>div:nth-child(4)>h4+div svg{
+    font-size:30px;
+    /* width:40%; */
+    color:#0066CC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footerSection+div{
+    width:100%;
+    background-color: rgb(0,9,29);
+}
+#footerSection+div>p{
+    color:#E0E0E0;
+    text-align: center;
+    padding:100px;
+}
+#footerSection+div span{
+ cursor:pointer;
+}

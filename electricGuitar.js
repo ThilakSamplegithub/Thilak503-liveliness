@@ -3,52 +3,62 @@ const cardCreator=document.querySelector(".functionalityStarts")
 let arr=[{
     imageUrl:"https://www.adorama.com/images/product/sq371823006_1.jpg",
     name:"Squier Stratocaster Electric Guitar Pack with 10G Amplifier and Gig Bag, Black",
-    price:269.99
+    price:269.99,
+    brand:"Squier"
 },
 {
     imageUrl:"https://www.adorama.com/images/product/sq371221502.jpg",
     name:"Squier FSR Bullet Competition Mustang Electric Guitar, Blue w/Ice Blue Stripes",
-    price:189.99   
+    price:189.99,
+    brand:"Squier"  
 },
 {
     imageUrl:"https://www.adorama.com/images/product/sq371823006_1.jpg",
     name:"Fender American Professional II Stratocaster Electric Guitar, Maple, Dark Night",
-    price:1699.99  
+    price:1699.99,
+    brand:"Fender"  
 },
 {
     imageUrl:"https://www.adorama.com/images/product/ja2910138557.jpg",
     name:"Jackson JS Series Dinky Arch Top JS32 DKA Electric Guitar, Amaranth, Natural Oil",
-    price:399.99   
+    price:399.99,
+    brand:"Jackson"   
 },
 {
     imageUrl:"https://www.adorama.com/images/product/ev5107902503.jpg",
     name:"EVH Striped Series Stratocaster Electric Guitar, Gloss, Red with Black Stripes",
-    price:1349.99  
+    price:1349.99,
+    brand:"EVH"   
 },
 {
     imageUrl:"https://www.adorama.com/images/product/ja2918804587.jpg",
     name:"Jackson JS32Q DKA JS Series Dinky Arch Top Electric Guitar, Green Burst",
-    price:399.99  
+    price:399.99,
+    brand:"Jackson"  
 },
 {
     imageUrl:"https://www.adorama.com/images/product/fe0113900705.jpg",
     name:"Fender American Pro II Stratocaster Electric Guitar, Rosewood, Olympic White",
-    price:1699.99  
+    price:1699.99,
+    brand:"Fender"  
 },
 {
     imageUrl:"https://www.adorama.com/images/product/fe0113940755.jpg",
     name:"Fender American Pro II Telecaster Electric Guitar, Rosewood, Mercury",
-    price:1699.99  
+    price:1699.99,
+    brand:"Fender"  
 },
 {
     imageUrl:"https://www.adorama.com/images/product/fe0113900700.jpg",
     name:"Fender American Pro II Stratocaster Electric Guitar, Rosewood, 3-Color Sunburst",
-    price:1699.99   
+    price:1699.99,
+    brand:"Fender"   
 },
 {
     imageUrl:"https://www.adorama.com/images/product/fe0141030340.jpg",
     name:"Fender Artist Series Kurt Cobain Jag-Stang Electric Guitar, Fiesta Red",
-    price:1349.99   
+    price:1349.99,
+    brand:"Fender"   
 },
 {
     imageUrl:"https://www.adorama.com/images/product/sq37803502.jpg",
@@ -58,72 +68,86 @@ let arr=[{
 {
     imageUrl:"https://www.adorama.com/images/product/fe0113900755.jpg",
     name:"Fender American Professional II Stratocaster Electric Guitar, Rosewood, Mercury",
-    price:1699.99   
+    price:1699.99,
+    brand:"Fender"   
 },
 {
     imageUrl:"https://www.adorama.com/images/product/sq378002506.jpg",
     name:"Squier Affinity Series Stratocaster Electric Guitar, Maple, Black",
-    price:249.99   
+    price:249.99,
+    brand:"Squier"   
 },
 {
     imageUrl:"https://www.adorama.com/images/product/fe0113902719.jpg",
     name:"Fender American Professional II Stratocaster Electric Guitar, Maple, Miami Blue",
-    price:1699.99   
+    price:1699.99,
+    brand:"Fender"   
 },
 {
     imageUrl:"https://www.adorama.com/images/product/fe0113902747.jpg",
     name:"Fender American Pro II Stratocaster Electric Guitar, Maple, Sienna Sunburst",
-    price:1799.99  
+    price:1799.99,
+    brand:"Fender"  
 },
 {
     imageUrl:"https://www.adorama.com/images/product/fe0113900719.jpg",
     name:"Fender American Pro II Stratocaster Electric Guitar, Rosewood, Miami Blue",
-    price:1699.99  
+    price:1699.99,
+    brand:"Fender"  
 },
 {
     imageUrl:"https://www.adorama.com/images/product/fe0118062703.jpg",
     name:"Fender American Ultra Luxe Stratocaster Electric Guitar, Maple, 2-Color Sunburst",
-    price:2599.99 
+    price:2599.99,
+    brand:"Fender" 
 },
 {
     imageUrl:"https://www.adorama.com/images/product/sq37823550.jpg",
     name:"Squier Affinity Series Telecaster Electric Guitar, Maple, Butterscotch Blonde",
-    price:249.99 
+    price:249.99,
+    brand:"Squier" 
 },
 {
     imageUrl:"https://www.adorama.com/images/product/fe0113902705.jpg",
     name:"Fender American Pro II Stratocaster Electric Guitar, Maple, Olympic White",
-    price:1699.99  
+    price:1699.99,
+    brand:"Fender"  
 },
 {
     imageUrl:"https://www.adorama.com/images/product/fe0113942700.jpg",
     name:"Fender American Pro II Telecaster Electric Guitar, Maple, 3-Color Sunburst",
-    price:1699.99   
+    price:1699.99,
+    brand:"Fender"   
 },
 {
     imageUrl:"https://www.adorama.com/images/product/fe0113902700.jpg",
     name:"Fender American Pro II Stratocaster Electric Guitar, Maple, 3-Color Sunburst",
-    price:1699.99  
+    price:1699.99,
+    brand:"Fender"  
 },
 {
     imageUrl:"https://www.adorama.com/images/product/ibgrx70qatbb.jpg",
     name:"Ibanez GIO GRX70QA Electric Guitar, Rosewood Fretboard, Transparent Blue Burst",
-    price:199.99  
+    price:199.99,
+    brand:"Ibanez"   
 },
 {
     imageUrl:"https://www.adorama.com/images/product/sq378000500.jpg",
     name:"Squier Affinity Series Stratocaster Electric Guitar, Laurel, 3-Color Sunburst",
-    price:249.99   
+    price:249.99,
+    brand:"Squier"   
 },
 {
     imageUrl:"https://www.adorama.com/images/product/sq371220506.jpg",
     name:"Squier Bullet Mustang HH Electric Guitar, Indian Laurel Fingerboard, Black",
-    price:199.99   
+    price:199.99,
+    brand:"Squier"   
 },
 {
     imageUrl:"https://www.adorama.com/images/product/sq378153539.jpg",
     name:"Squier Affinity Series Stratocaster FMT HSS Electric Guitar, Maple, Black Burst",
-    price:309.99   
+    price:309.99,
+    brand:"Squier"   
 }
 
 ]
@@ -170,4 +194,37 @@ renderCardlist(arr)
 function addtoCart(name){
     console.log(name)
 }
-    
+// filter functionality
+document.getElementById("toFilter").addEventListener('click',(e)=>{
+    // e.preventDefault()
+    if(document.getElementById('toFilter').value===''){
+        // window.location.reload()
+    }else{
+        let filteredArr=arr.filter(el=>{
+            return el.brand===document.getElementById("toFilter").value
+        })
+        renderCardlist(filteredArr)
+    }
+    // we  can also do this way
+    // }else if(document.getElementById('toFilter').value==="EVH"){
+    //   let filterArr= arr.filter(el=>{
+    //         return el.brand==="EVH"
+    //     })
+    //     renderCardlist(filterArr)
+    // }else if(document.getElementById('toFilter').value==="Squier"){
+    //     let filterArr= arr.filter(el=>{
+    //         return el.brand==="Squier"
+    //     })
+    //     renderCardlist(filterArr)
+    // }else if(document.getElementById('toFilter').value==="Fender"){
+    //     let filterArr= arr.filter(el=>{
+    //         return el.brand==="Fender"
+    //     })
+    //     renderCardlist(filterArr)
+    // }else if(document.getElementById('toFilter').value==="Jackson"){
+    //     let filterArr= arr.filter(el=>{
+    //         return el.brand==="Jackson"
+    //     })
+    //     renderCardlist(filterArr)
+    // }
+})
