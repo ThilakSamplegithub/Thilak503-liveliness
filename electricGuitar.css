@@ -100,6 +100,7 @@ color:blue;
         height: auto;
         display:flex;
         justify-content: space-between;
+        /* justify-content: space-evenly; */
         align-items: center;
         /* border:1px solid red; */
         width:100%;
@@ -150,6 +151,37 @@ color:blue;
     /* .rightprofilesection>div{
         border: 1px solid red;
     } */
+    /* search bar css */
+    /* #navBar>div:nth-child(3)>div:nth-child(2){
+        border:1px solid red
+    } */
+    #search>input{
+        border:none;
+        margin-left: -100px;
+        font-size:15px ;
+    }
+    #search>span{
+        margin-right: -120px;
+        /* border: 1px solid blue; */
+    }
+    #search{
+        /* display: none; */
+        border:1px solid #222;
+        /* border:1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        border-radius: 15px;
+        /* margin-left: -100px; */
+        padding:4px;
+        background-color: white;
+    }
+    .rightprofilesection{
+        /* border:1px solid red; */
+        width:15%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
     .rightprofilesection>div:nth-child(1)>svg{
         width: 50px;
         height: 50px;
@@ -320,7 +352,7 @@ color:blue;
     /* background-color: blue; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,450px);
+    grid-template-rows: repeat(9,auto);
     gap:30px;
     
 }
@@ -489,4 +521,38 @@ width:40%;
 }
 #footerSection+div span{
  cursor:pointer;
+}
+@media screen and (min-width:320px) and (max-width:760px){
+    #functionalitySection>div:nth-child(2)>div:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(13,auto);
+    }
+    #footerSection{
+        /* border:1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,auto);
+    }
+    #functionalitySection>div:nth-child(1){
+        /* border:1px solid red; */
+        display: none;
+    }
+    /* here onwards navbar */
+    #navBar>div:nth-child(1){
+        display:none;
+    }
+    #navBar>div:nth-child(2){
+        display: none;
+    }
+    #navBar>div:nth-child(3)>div>div>div~div{
+        display: none;
+        border:1px solid red;
+    }
+    #navBar>div:nth-child(3){
+        display:flex;
+        flex-direction: column;
+    }
+    
+           
 }
