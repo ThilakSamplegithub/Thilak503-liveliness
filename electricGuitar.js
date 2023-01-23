@@ -184,7 +184,7 @@ function renderCardlist(arr){
                             <p>${el.name}</p>
                             <p>Our Price</p>
                             <p>$${el.price}</p>
-                            <button onclick="addtoCart('${el.name}')">Add to Cart</button>
+                            <button onclick="addtoCart('${el.brand} is added to cart')">Add to Cart</button>
                             <p>In Stock</p>
                         </div>     
                 `
@@ -193,7 +193,7 @@ function renderCardlist(arr){
 }
 renderCardlist(arr)
 function addtoCart(name){
-    console.log(name)
+   alert(name)
 }
 // filter functionality
 document.getElementById("toFilter").addEventListener('click',(event)=>{
