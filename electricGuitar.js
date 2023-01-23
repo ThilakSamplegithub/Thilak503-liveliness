@@ -153,25 +153,26 @@ let arr=[{
 ]
 // const select=document.querySelector("select")
 // console.log(select.value)
-document.querySelector("select").addEventListener('change',(e)=>{
-    if(document.querySelector("select").value===''){
+document.querySelector("#PopularResults").addEventListener('change',(e)=>{
+    if(document.querySelector("#PopularResults").value===''){
         window.location.reload()
         // console.log("invoke me")
         // renderCardlist(arr)
         // console.log(unsortedArr)
-    }else if(document.querySelector('select').value==="Low to High"){
+    }else if(document.querySelector('#PopularResults').value==="Low to High"){
         // console.log('invoke me')
       let sortedArr = arr.sort((a,b)=>{
          return a.price-b.price
         })
-        // console.log(sortedArr)
         renderCardlist(sortedArr)
-        // console.log(sortedArr)
-    }else if(document.querySelector("select").value==="High to Low"){
+        console.log('invoke me')
+        console.log(sortedArr)
+    }else if(document.querySelector("#PopularResults").value==="High to Low"){
       let desArr =  arr.sort((a,b)=>{
            return b.price-a.price
         })
         renderCardlist(desArr)
+        console.log('invoke me')
     }
 })
 function renderCardlist(arr){
@@ -183,7 +184,7 @@ function renderCardlist(arr){
                             <p>${el.name}</p>
                             <p>Our Price</p>
                             <p>$${el.price}</p>
-                            <button onclick="addtoCart(${el.name})">Add to Cart</button>
+                            <button onclick="addtoCart('${el.name}')">Add to Cart</button>
                             <p>In Stock</p>
                         </div>     
                 `
@@ -195,8 +196,8 @@ function addtoCart(name){
     console.log(name)
 }
 // filter functionality
-document.getElementById("toFilter").addEventListener('click',(e)=>{
-    // e.preventDefault()
+document.getElementById("toFilter").addEventListener('click',(event)=>{
+    event.preventDefault()
     if(document.getElementById('toFilter').value===''){
         // window.location.reload()
     }else{
